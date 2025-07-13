@@ -1,0 +1,14 @@
+# Core Frameworks
+streamlit
+langchain
+langchain-openai
+langchain-google-genai
+langchain-community
+
+# Data Processing and Vector Stores
+pypdf
+chromadb
+faiss-cpu
+
+# Utilities
+python-dotenv
