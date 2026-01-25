@@ -4,6 +4,7 @@ from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
 # --- Configuration ---
@@ -50,7 +51,7 @@ def ingest_documents():
     print(f"Split {len(documents)} documents into {len(chunked_documents)} chunks.")
 
     # 3. Initialize the embedding model
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 
     # 4. Create or load the vector store and add the documents
     

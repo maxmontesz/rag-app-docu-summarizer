@@ -1,13 +1,14 @@
 # Core Frameworks
-streamlit
+streamlit==1.46.1
 langchain
 langchain-openai
 langchain-google-genai
 langchain-community
+langchain-text-splitters
 
 # Data Processing and Vector Stores
 pypdf
-chromadb
+chromadb==1.0.15
 faiss-cpu
 
 # Utilities
